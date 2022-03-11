@@ -1,0 +1,442 @@
+body{
+  position: relative;
+  background-color: #faf8f4;
+}
+.container {
+  background-color: white;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+
+}
+.center{
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.hr{
+  visibility: hidden;
+}
+.header{
+  padding-top: 1%;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.mainHeading{
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+  margin-right:  0.5%;
+  padding-right: 1.5%;
+  /* padding-bottom: 0.15%; */
+  margin-top: 0.5rem;
+  border-right: 1px solid white;
+  font-size: 2.2rem;
+}
+.mainHeading p{
+  font-size: 22px;
+}
+.logoImg{
+  border-radius: 50%;
+  width: 140px;
+  height: 115px;
+}
+/* css for crousel */
+.carousel-inner{
+  height: 190px;
+}
+.carousel-inner img {
+  width: 100%;
+  background: cover;
+  height: 192px;
+}
+/* Button for sliding  */
+.mainButtons{
+  display: flex;
+  background-color: #F7ECDE;
+  margin-top: 1%;
+  border-bottom: 1px solid black;
+}
+.mainButtons .btn-dark{
+  font-weight: bolder;
+}
+.mainButtons .btn-outline-dark{
+  border: none;
+}
+.mainButtons .btn-outline-dark:hover{
+  background-color: black;
+}
+.mainButtons .department , .mainButtons .faculty , .mainButtons .instrument , .mainButtons .reasearchWork   {
+  /* border-bottom:  1px solid black; */
+  margin: 0.25%;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.navbar {
+  padding : 0;
+}
+.navbar-nav{
+  flex-direction: row;
+}
+.navbar-nav li :hover {
+  font-weight: bold;
+
+}
+.mainButtons .dropdown:hover .dropdown-menu{
+  display: inline-block;
+}
+.navbar-nav li a button  {
+  border : none;
+  background-color: #F7ECDE;
+}
+.dropdown-menu li a  button{
+  background-color: white;
+}
+.dropdown-menu li a:hover {
+  background-color: #e9ecef;
+
+}
+.dropdown-menu li a  button:hover{
+  background-color: #e9ecef;
+  color: black;
+  font-weight: bold;
+}
+.dropdown-menu li:hover {
+  background-color : #e9ecef;
+}
+/* Left SIde */
+.left{
+  padding: 4%
+}
+/* right side */
+.right{
+  padding: 4%;
+}
+.content {
+  height: 300px;
+  overflow-y: scroll;
+  scrollbar-color: rebeccapurple green;
+  scrollbar-width: thin;
+}
+.contentHolder{
+  padding: 3% 5% 3%;
+  position: relative;
+}
+/* Head Director Desk */
+.DirectorDeskSection{
+  background-color: #F7ECDE;
+  margin-bottom: 8%;
+  padding: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.DirectorDeskSection .content{
+  background-color: #F7ECDE;
+  height: 400px;
+}
+.DirectorDeskSection .content .imageAndContent , .instrumentSection .imagesAndContent , .researchAndTestingLabSection .imagesAndContent{
+  display: flex;
+  padding: 2%;
+  padding-top: 0;
+}
+.DirectorDeskSection .content .imageAndContent img , .instrumentSection .imagesAndContent img , .researchAndTestingLabSection .imagesContent img{
+  /* border-radius: 60%; */
+  /* border: 2px solid rgba(0 , 0 , 0 , 0.8); */
+  width: 200px;
+  height: 200px;
+  margin: 4px;
+}
+.instrumentSection .imagesAndContent img , .researchAndTestingLabSection .imagesContent img {
+  border-radius: 20%;
+}
+.DirectorDeskSection .content .imageAndContent .imageContent , .instrumentSection .imagesAndContent .imageContent , .researchAndTestingLabSection .imagesAndContent .imageContent {
+  padding: 15px;
+}
+.headingDirectorDesk h5 {
+  text-align: left;
+}
+/* Calendar section  */
+.calendarSection{
+  background-color: white;
+  padding: 3%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+.calendarSection .content {
+  height: 150px;
+}
+/* announcement section */
+.announcement{
+  background-color: #F5EEDC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 3%;
+  margin-bottom: 8%;
+}
+.announcement .content{
+  height: 120px;
+}
+/* latest news  */
+.latestNews {
+  background-color: #F5EEDC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5%;
+  margin-bottom: 7%;
+}
+.latestNews .content{
+  height: 150px;
+}
+/* upcomingWorkshop */
+.upcomingWorkshop{
+  background-color: #F5EEDC;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 5%;
+}
+.upcomingWorkshop .content{
+  height: 100px;
+}
+/* footer section social icon  */
+.socialIcon{
+  display: flex;
+  margin-top: 2%;
+}
+.fa{
+  padding: 16px;
+  font-size: 25px;
+}
+/* history Section  */
+.historySection h1 , .objectivesSection h1{
+  width: fit-content;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid;
+
+}
+.historySection p , .objectivesSection p{
+  font-size: 22px;
+}
+/* visionandmission section */
+.visionAndMissionSection h3 {
+  color: red;
+  opacity: 0.8;
+}
+.visionAndMissionSection p {
+  font-size: 20px;
+  color: black;
+}
+.objectivesSection ol li {
+  font-size: 15px;
+  margin: 10px 0;
+}
+
+/* incharges section  */
+.inchargesSection .content {
+  height: 650px;
+}
+.inchargesSection .incharges{
+    display: flex;
+    justify-content: center;
+}
+.inchargesSection h4{
+    margin-left: 15px;
+    font-family: sans-serif;
+}
+
+.inchargesSection .incharges-img{
+    border: 5px solid silver;
+    margin: 5px;
+    display: flex;
+    width: 200px;
+    height : 200px;
+    border-radius: 50%;
+}
+.inchargesSection .incharges-text, .incharges-text1{
+    margin: 10px;
+}
+.inchargesSection .incharges-text{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.inchargesSection .testing-lab{
+    width: 48%;
+    margin: 15px;
+    border: 4px solid silver;
+    border-radius: 5px;
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+.inchargesSection .testing-lab h3 {
+  color: black;
+  margin-top: 1rem;
+  position: sticky;
+}
+.inchargesSection .in{
+    display: flex;
+    justify-content: center;
+}
+.inchargesSection .paragraph{
+    display: inline;
+    margin-left: 90%;
+
+}
+.inchargesSection .incharges :hover{
+    /* transform: scale(1.05); */
+
+
+}
+@media  screen and (max-width:1025px) {
+    .inchargesSection .incharges{
+        display: block;
+    }
+    .inchargesSection .testing-lab{
+        width: 90%;
+    }
+}
+
+
+/* faculty section  */
+.facultySection , .instrumentSection , .reasearchWorkSection , .historySection , .visionAndMissionSection , .objectivesSection , .inchargesSection , .advisoryCommitteeSection , .researchAndTestingLabSection , .advisoryCommitteeMeetingSection , .trainingAndWorkshopSection , .projectsSection , .testingSection , .patentsSection , .papersSection{
+  position: absolute;
+  top: 4%;
+}
+@media screen and (max-width: 800px) {
+  .mainHeading{
+    font-size: 21px;
+  }
+  .mainHeading p{
+    font-size: 9px;
+  }
+  .carousel-inner{
+    height: 85px;
+  }
+  .navbar-nav {
+    flex-direction: column;
+  }
+}
+
+
+
+
+/* team section css */
+.facultySection .containers {
+    width: 90%;
+    margin: 50px auto;
+
+}
+
+.facultySection .heading {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.facultySection .rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.facultySection .cards {
+    width: 30%;
+    background-image: #fff;
+    border: 1px solid #ccc;
+    margin-bottom: 50px;
+    transition: 0.3s;
+}
+
+.facultySection .card-headers {
+    text-align: center;
+    padding: 50px 10px;
+}
+.facultySection .card-texts {
+    display: flex;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.facultySection .img {
+    border-radius: 50%;
+    width: 70px;
+}
+.facultySection .card-bodys {
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.facultySection .card-bodys .btn {
+    display: block;
+    color: #fff;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    margin-top: 30px;
+    text-decoration: none;
+    padding: 10px 5px;
+}
+
+.facultySection .cards:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width:1000px) {
+    .facultySection .cards {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:620px) {
+    .facultySection .containers {
+        width: 100%;
+    }
+
+    .facultySection .heading {
+        padding: 20px;
+        font-size: 20px;
+    }
+
+    .facultySection .cards {
+        width: 80%;
+    }
+}
+
+/* advisory Committee Section */
+.advisoryCommitteeSection th, .advisoryCommitteeSection tr, .advisoryCommitteeSection td{
+    border:2px solid black;
+
+
+}
+.advisoryCommitteeSection table{
+    width: 85%;
+    text-align: center;
+    border-collapse: collapse;
+    border: 2px solid black;
+    margin:auto;
+}
+.advisoryCommitteeSection th{
+    height:70px;
+    vertical-align:middle;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+}
+.advisoryCommitteeSection td{
+    font-size: 20px;
+    background-color: #fff;
+    text-align: left;
+    padding-left: 5px;
+}
+.advisoryCommitteeSection h1{
+    text-align: center;
+    margin-bottom: 25px;
+}
+/* Instrument section code  */
+.instrumentSection , .researchAndTestingLabSection {
+  margin: 5%;
+  justify-content: center;
+}
+.instrumentSection .left , .instrumentSection .right , .researchAndTestingLabSection .left , .researchAndTestingLabSection .right{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.7);
+  margin: 1.5%;
+  /* width: 47%; */
+  color: black;
+}
